@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="org.qris.timereport" android:versionCode="1"
+	android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="8" />
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:allowBackup="true" android:debuggable="false">
+		<activity android:label="@string/app_name" android:name="TimeReportList">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<provider android:name="EventsProvider" android:authorities="org.qris.timereport"></provider>
+		<receiver android:label="@string/widget_name" android:name="EventWidget">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/widget" />
+		</receiver>
+		<activity android:label="@string/resolv_edit" android:name="EventEditor">
+		</activity>
+		<activity android:name="ProjectList" android:label="@string/project_list">
+			<intent-filter>
+				<action android:name="android.intent.action.PICK"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+				<category android:name="android.intent.category.OPENABLE"></category>
+				<data android:mimeType="vnd.android.cursor.dir/project"></data>
+
+
+			</intent-filter>
+		</activity>
+		<activity android:name="ProjectEditor" android:label="@string/label_project"
+			android:theme="@android:style/Theme.Dialog"></activity>
+		<activity android:name="ActivityList" android:label="@string/activity_list">
+			<intent-filter>
+				<action android:name="android.intent.action.PICK"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+				<category android:name="android.intent.category.OPENABLE"></category>
+				<data android:mimeType="vnd.android.cursor.dir/activity"></data>
+
+
+			</intent-filter>
+		</activity>
+		<activity android:label="@string/activity_list" android:name="ActivityEditor"
+			android:theme="@android:style/Theme.Dialog"></activity>
+		<activity android:name="DatabaseList" android:label="@string/database_list"></activity>
+	</application>
+
+
+
+
+</manifest> 

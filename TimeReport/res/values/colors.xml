@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="opaque_red">#f00</color>
+	<color name="translucent_red">#80ff0000</color>
+	<color name="white">#ffffffff</color>
+	<color name="black">#000000</color>
+	<color name="edit_item_backgr">#a0a0a0</color>
+	<color name="opaque_blue">#00f</color>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		! Excerpted from "Hello, Android!", ! published by The Pragmatic
+		Bookshelf. ! Copyrights apply to this code. It may not be used to
+		create training material, ! courses, books, articles, and the like.
+		Contact us if you are in doubt. ! We make no guarantees that this code
+		is fit for any purpose. ! Visit
+		http://www.pragmaticprogrammer.com/titles/eband for more book
+		information.
+	-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_height="wrap_content" android:layout_width="fill_parent">
+		<TextView android:id="@+id/item_date" android:text="10-10-2010"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="5" android:textColor="@color/black" android:background="@drawable/list_bg"></TextView>
+		<TextView android:layout_height="wrap_content" android:id="@+id/item_time"
+			android:text="12:22" android:minWidth="50sp" android:layout_gravity="left|center_vertical"
+			android:layout_width="fill_parent" android:layout_weight="6"/>
+		<TextView android:layout_height="wrap_content" android:id="@+id/item_duration"
+			android:text="8:00" android:minWidth="50sp" android:layout_gravity="left|center_vertical"
+			android:layout_width="fill_parent" android:layout_weight="6"
+			android:textStyle="bold"></TextView>
+		<TextView android:layout_height="wrap_content" android:layout_below="@+id/item_time" android:lines="1"
+			android:id="@+id/item_project" android:layout_width="fill_parent"
+			android:layout_weight="4" android:textSize="24sp"></TextView>
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/LinearLayout02"
+		android:layout_height="wrap_content" android:layout_width="fill_parent">
+		<TextView android:layout_height="wrap_content" android:id="@+id/item_activity"
+			android:layout_below="@+id/item_date" android:text="activity"
+			android:layout_width="fill_parent" android:layout_weight="5"></TextView>
+		<TextView android:layout_height="wrap_content" android:id="@+id/item_note"
+			android:layout_width="fill_parent" android:layout_weight="2"
+			android:text="Note" android:maxLines="1" android:lines="1"></TextView>
+	</LinearLayout>
+</LinearLayout>

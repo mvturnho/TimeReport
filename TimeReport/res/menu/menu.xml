@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="@string/menu_add" android:id="@+id/menu_add"
+		android:icon="@android:drawable/ic_menu_add"></item>
+
+	<item android:title="@string/menu_projects" android:id="@+id/menu_projects"
+		android:icon="@android:drawable/ic_menu_myplaces"></item>
+
+	<item android:id="@+id/menu_activities" android:title="@string/menu_activities"
+		android:icon="@android:drawable/ic_menu_set_as"></item>
+
+
+	
+<item android:title="@string/menu_export" android:id="@+id/menu_export" android:icon="@android:drawable/ic_menu_share"></item>
+	<item android:title="@string/menu_database" android:id="@+id/menu_databases"
+		android:icon="@android:drawable/ic_menu_agenda"></item>
+</menu>

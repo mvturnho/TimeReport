@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent">
+
+<LinearLayout
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+<TextView android:id="@+id/TextView01" android:layout_height="wrap_content" android:text="@string/export_file" android:layout_weight="2" android:layout_width="wrap_content"></TextView><EditText android:layout_height="wrap_content" android:layout_weight="4" android:id="@+id/export_file_name" android:layout_width="wrap_content"></EditText></LinearLayout><RadioGroup android:layout_height="wrap_content" android:orientation="horizontal" android:layout_width="fill_parent" android:id="@+id/export_radiogroup"><RadioButton android:layout_height="wrap_content" android:id="@+id/export_html_RadioButton" android:text="@string/export_html" android:layout_weight="2" android:layout_width="0px"></RadioButton>
+
+<RadioButton
+    android:id="@+id/export_cvs_RadioButton"
+    android:layout_width="0px"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:text="@string/export_cvs" />
+
+</RadioGroup>
+
+
+
+
+</LinearLayout>

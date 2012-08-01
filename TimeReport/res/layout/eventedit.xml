@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:orientation="vertical"
+	android:scrollbars="vertical" android:layout_width="fill_parent">
+
+
+	<ScrollView android:id="@+id/ScrollView02"
+		android:layout_height="fill_parent" android:layout_width="fill_parent">
+		<LinearLayout android:id="@+id/LinearLayout01"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<LinearLayout android:id="@+id/LinearLayout03"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:orientation="vertical" android:background="@drawable/list_bg">
+				<LinearLayout android:id="@+id/LinearLayout04"
+					android:layout_height="wrap_content" android:layout_width="fill_parent">
+					<TextView android:layout_height="wrap_content" android:id="@+id/edit_project_label"
+						android:text="@string/label_project" android:textColor="@color/black"
+						android:layout_width="0px" android:layout_gravity="left|center_vertical"
+						android:layout_weight="4" android:textSize="18sp"></TextView>
+					<AutoCompleteTextView android:layout_width="0px" android:layout_gravity="left|center_vertical"
+						android:lines="1" android:id="@+id/edit_project_autotext"
+						android:layout_weight="10" android:layout_height="50sp"></AutoCompleteTextView>
+				
+
+<ImageButton android:src="@drawable/dropdownimage" android:layout_height="50sp" android:layout_width="50sp" android:id="@+id/project_popuplist_button"></ImageButton>
+</LinearLayout>
+				
+			</LinearLayout>
+			<LinearLayout android:id="@+id/LinearLayout06"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:orientation="vertical" android:paddingBottom="5sp"
+				android:background="@drawable/list_bg">
+				<LinearLayout android:id="@+id/LinearLayout07"
+					android:layout_height="wrap_content" android:layout_width="fill_parent">
+					<TextView android:layout_height="wrap_content" android:id="@+id/edit_act_label"
+						android:textColor="@color/black" android:layout_width="0px"
+						android:layout_gravity="left|center_vertical"
+						android:layout_weight="4" android:text="@string/label_activity"
+						android:textSize="18sp"></TextView>
+					<AutoCompleteTextView android:layout_height="wrap_content"
+						android:layout_width="0px" android:layout_gravity="left|center_vertical"
+						android:lines="1" android:id="@+id/edit_act_autotext"
+						android:layout_weight="10"></AutoCompleteTextView>
+					<ImageButton android:src="@drawable/dropdownimage" android:layout_height="50sp" android:layout_width="50sp" android:id="@+id/activity_popuplist_button"></ImageButton>
+				</LinearLayout>
+				
+			</LinearLayout>
+
+			<LinearLayout android:id="@+id/LinearLayout02"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:orientation="vertical" android:background="@drawable/list_bg">
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="fill_parent" android:id="@+id/edit_startdate_layout">
+					<TextView android:layout_height="wrap_content"
+						android:text="@string/segment_start" android:id="@+id/edit_start_label"
+						android:layout_gravity="left|center_vertical"
+						android:layout_width="0px" android:layout_weight="4"
+						android:textColor="@color/black" android:textSize="18sp"></TextView>
+					<Button android:id="@+id/edit_start_date_button"
+						android:layout_height="wrap_content" android:layout_width="0px"
+						android:text="28-12-2010" android:layout_gravity="left|center_vertical"
+						android:layout_weight="6"></Button>
+					<Button android:id="@+id/edit_start_time_button"
+						android:layout_height="wrap_content" android:layout_weight="4"
+						android:layout_width="0px" android:text="22:58"
+						android:layout_gravity="left|center_vertical"></Button>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/edit_endtime_layout"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:layout_height="wrap_content"
+						android:text="@string/segment_end" android:id="@+id/edit_end_label"
+						android:layout_gravity="left|center_vertical"
+						android:layout_width="0px" android:layout_weight="10"
+						android:textColor="@color/black" android:textSize="18sp"></TextView>
+					<Button android:id="@+id/edit_end_time_button"
+						android:layout_height="wrap_content" android:layout_weight="4"
+						android:layout_width="0px" android:text="22:58"
+						android:layout_gravity="left|center_vertical"></Button>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/edit_duration_layout"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					<TextView android:layout_height="wrap_content" android:id="@+id/edit_duration_label"
+						android:text="@string/label_duration" android:layout_width="0px"
+						android:layout_gravity="left|center_vertical"
+						android:layout_weight="10" android:textColor="@color/black"
+						android:textSize="18sp"></TextView>
+					<Button android:layout_height="wrap_content" android:id="@+id/edit_duration_button"
+						android:text="12:20" android:layout_width="0px"
+						android:layout_gravity="left|center_vertical"
+						android:layout_weight="4"></Button>
+				</LinearLayout>
+			</LinearLayout>
+
+
+			<EditText android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:autoLink="web|email|phone"
+				android:text="@string/empty_string" android:id="@+id/edit_note_text"></EditText>
+
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:id="@+id/ButtonsLinearLayout">
+				<Button android:layout_height="wrap_content" android:text="@string/button_save"
+					android:layout_weight="2" android:id="@+id/button_save"
+					android:layout_gravity="center_vertical|center_horizontal" android:layout_width="0px"></Button>
+				
+				<Button android:layout_height="wrap_content" android:id="@+id/button_delete" android:text="@string/button_delete" android:layout_weight="2" android:layout_gravity="center_vertical|center_horizontal" android:layout_width="0px"></Button>
+				<Button android:layout_height="wrap_content" android:text="@string/button_cancel"
+					android:layout_weight="2" android:id="@+id/button_cancel"
+					android:layout_gravity="center_vertical|center_horizontal" android:layout_width="0px"></Button>
+
+			
+</LinearLayout>
+		</LinearLayout>
+
+	</ScrollView>
+</LinearLayout>
